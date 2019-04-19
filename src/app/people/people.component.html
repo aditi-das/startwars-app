@@ -1,0 +1,9 @@
+<div class="container">
+  <div *ngFor="let people of peopleList" class="people-card" [routerLink]="people.id">
+    <div class="people-photo">Photo</div>
+    <div class="people-info">
+      <div>Name: {{people.name}}</div>
+      <div>Birth Year: {{people.birth_year}}</div>
+    </div>
+  </div>
+</div>

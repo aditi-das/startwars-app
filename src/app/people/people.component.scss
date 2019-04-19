@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  .people-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 20px 30px;
+    &:hover{
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+    .people-photo{
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
